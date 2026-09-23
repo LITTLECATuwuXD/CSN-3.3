@@ -9,10 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
+    public function up(){
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('synopsis');
+            $table->integer('year');
+            $table->string('cover');
             $table->timestamps();
         });
     }
