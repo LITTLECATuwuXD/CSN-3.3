@@ -1,0 +1,31 @@
+services:
+  mariadb:
+    image: docker.io/library/mariadb:11
+    container_name: mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: Mistontle3
+      MARIADB_DATABASE: catalogo
+      MARIADB_USER: u2a3
+      MARIADB_PASSWORD: 32147891486378529148633214732178963563214789321478963
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./backups:/docker-entrypoint-initdb.d:ro   # se importa SOLO la 1ra vez
+    ports:
+      - "127.0.0.1:3306:3306"
+    restart: unless-stopped
+
+  app:
+    build: .
+    image: laravel-dev
+    container_name: laravel-app
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mariadb
+    command: php artisan serve --host=0.0.0.0 --port=8000
+
+volumes:
+  mariadb_data:
