@@ -36,7 +36,12 @@ class MovieController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $movie=Movie::find($id);
+        if(!$movie){
+            return response()->json(['error' => 'Movie not found'],404);
+        }
+        $movie->update($request->all());
+        return response()->json($movie,200);
     }
 
     /**
@@ -44,6 +49,11 @@ class MovieController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $movie=Movie::find($id);
+        if(!$movie){
+            return response()->json(['error' => 'Movie not found'],404);
+        }
+        $movie->delete();
+        return response()->json(['message'=>'Movie deleted successfully'],200);
     }
 }
