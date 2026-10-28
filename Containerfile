@@ -1,4 +1,4 @@
-FROM docker.io/library/php:8.4-cli
+FROM docker.io/library/php:8.4.27
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       git unzip libzip-dev libonig-dev libxml2-dev \
