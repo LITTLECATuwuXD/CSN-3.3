@@ -14,11 +14,13 @@ done
 # 1. Migraciones idempotentes: crea tablas SOLO si faltan. No ejecuta seeders.
 php artisan migrate --force
 
-# 2. Symlink de storage (portadas subidas como archivo)
-php artisan storage:link || true
 
 # Asegurar que exista el directorio de vistas compiladas
 mkdir -p storage/framework/views
+
+# 2. Symlink de storage (portadas subidas como archivo)
+php artisan storage:link || true
+
 
 # 3. Cachés de producción (generadas DESPUÉS de que las variables de Railway existen)
 php artisan optimize:clear
