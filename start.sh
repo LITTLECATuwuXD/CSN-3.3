@@ -16,7 +16,7 @@ php artisan migrate --force
 
 
 # Asegurar que exista el directorio de vistas compiladas
-mkdir -p storage/framework/views
+mkdir -p /tmp/views
 
 # 2. Symlink de storage (portadas subidas como archivo)
 php artisan storage:link || true
