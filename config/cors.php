@@ -19,7 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['http://localhost:4200',  // para desarrollo local
+    'https://tu-angular.up.railway.app',  // dominio de Railway (Lo tendremos cuando hagamos deploy a nuestro frontend)
+    ],
 
     'allowed_origins_patterns' => [],
 

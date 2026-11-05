@@ -237,18 +237,17 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `movies` WRITE;
 /*!40000 ALTER TABLE `movies` DISABLE KEYS */;
 INSERT INTO `movies` VALUES
-(1,'Emmanuelle','La mujer de un diplomático francés en Bangkok se embarca en un viaje de descubrimiento sexual.',1974,'nuevo_cover.jpg','2026-09-24 02:43:39','2026-10-08 10:20:55'),
-(3,'El extraño mundo de Jack','Jack Skellington, el rey de la Ciudad de Halloween, descubre la Ciudad de la Navidad, pero sus intentos de llevar la Navidad a Halloween causan confusión.',1993,'Quis ea est in itaque velit atque at.','2026-09-24 02:43:39','2026-11-01 01:20:13'),
-(4,'Deserunt vel numquam et.','Nemo quasi ut beatae doloribus molestiae. Voluptatibus officia ducimus odit quae sint dignissimos consequatur quam.',1985,'Suscipit ut eos repellendus animi non placeat tempora.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(5,'Temporibus et facilis iste voluptas quis.','Sapiente nemo eligendi quibusdam doloribus commodi sed. Voluptas eum quibusdam eum quo. Et dolores porro et placeat. Ut ea excepturi atque officiis porro enim.',2002,'Deleniti reprehenderit eaque quos repellendus nostrum eius cumque.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(6,'Rerum ut qui molestias similique libero veniam.','Fuga aut hic beatae excepturi molestiae. Sint sint voluptas dolor quasi. Ratione laudantium dolor ex dolore non.',2006,'Voluptas exercitationem placeat est pariatur et.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(7,'Ducimus vero dolorem quam alias dolorem voluptas nam.','Eveniet ad vel quos in ea vero consequatur. Voluptatem sapiente maxime est dignissimos ex. Saepe vel quis quo nihil sit.',2018,'Veniam nihil recusandae ducimus vero consequatur sequi eum.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(8,'Expedita aperiam voluptatem ea saepe nobis.','Adipisci quibusdam consequuntur aspernatur facere et explicabo. Voluptates rerum consequuntur porro veritatis sint est.',2004,'Voluptates laborum ducimus esse est.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(9,'Voluptas omnis dolore iste ex expedita aut.','Sed voluptatem iure hic perferendis cupiditate. Sunt vel mollitia et repudiandae voluptatem libero. Molestiae atque sit aut qui.',2017,'Asperiores debitis deleniti ullam iure quis quidem molestiae.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(10,'Sed molestiae rerum qui iste ea.','Nemo aliquam dolor et et. Aut dignissimos nihil esse accusantium delectus. Quo fugit enim ut necessitatibus itaque perferendis reiciendis.',1990,'Est harum velit temporibus labore earum labore.','2026-09-24 02:43:39','2026-09-24 02:43:39'),
-(11,'Dorian Gray','Un nuevo joven y bello hereda la fortuna de su abuelo en Londres, con el paso del tiempo y de la influencia de su amigo Henry este se ira corrompiendo.',2009,'Dorian.jpg','2026-10-01 04:41:16','2026-10-01 04:41:16'),
-(12,'Test','x',2026,'y.jpg','2026-10-01 04:46:06','2026-10-01 04:46:06'),
-(13,'Morte a Venezia','Mientras se recupera en Venecia, el compositor Gustav von Aschenbach se enamora de el adolescente Tadzio.',1971,'Cover2.png','2026-11-01 01:28:14','2026-11-01 01:28:14');
+(1,'Emmanuelle','La mujer de un diplomático francés en Bangkok se embarca en un viaje de descubrimiento sexual.',1974,'https://www.originalfilmart.com/cdn/shop/products/emmanuelle_1974_original_film_art_6d5e8a13-4c5a-44af-bb96-12ec94f37dc9.webp?v=1681861353&width=1200','2026-09-24 02:43:39','2026-11-01 04:46:36'),
+(3,'El extraño mundo de Jack','Jack Skellington, el rey de la Ciudad de Halloween, descubre la Ciudad de la Navidad, pero sus intentos de llevar la Navidad a Halloween causan confusión.',1993,'https://mx.web.img3.acsta.net/r_1280_720/medias/nmedia/18/62/89/46/18711970.jpg','2026-09-24 02:43:39','2026-11-01 04:47:29'),
+(4,'Jumanji','Cuando dos niños encuentran un mágico juego de mesa, liberan a un hombre que ha estado atrapado en el juego durante décadas, y a numerosas amenazas que solo serán detenidas si pueden acabar la partida.',1995,'https://www.ecartelera.com/images/videos/7200/7261_th01.jpg','2026-09-24 02:43:39','2026-11-01 04:36:44'),
+(5,'007 Casino royale','James Bond y Vesper Lynd tienen que evitar que un banquero mafioso gane un gran juego de póker.',2006,'https://es.web.img3.acsta.net/c_280_373/pictures/15/11/06/10/47/142603.jpg','2026-09-24 02:43:39','2026-11-01 04:50:25'),
+(7,'Gintama: The Final','Tres ex alumnos deben evitar que el malvado alter-ego de su mentor inmortal destruya la Tierra. A medida que se acerca la batalla final, aliados y enemigos se unen para salvar su mundo, mientras que un compañero lucha por sobrevivir.',2021,'https://cdn.jkdesa.com/assets/images/animes/image/gintama-shinyaku-benizakura-hen.jpg','2026-09-24 02:43:39','2026-11-01 04:55:01'),
+(8,'Drácula','El centenario vampiro Conde Drácula viaja a Inglaterra para seducir a su prometida e infligir estragos en el extranjero.',1992,'https://upload.wikimedia.org/wikipedia/en/a/a0/Bram_Stoker\'s_Dracula_(1992_film).jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled','2026-09-24 02:43:39','2026-11-01 04:56:22'),
+(9,'La sombra del amor (Ghost)','Después de que un joven es asesinado, su espíritu se queda atrás para advertir a su amante del peligro inminente, con la ayuda de un psíquico reacio.',1990,'https://www.fulltv.com.ar/images/peliculas/ghost-la-sombra-del-amor.jpg','2026-09-24 02:43:39','2026-11-01 04:58:36'),
+(10,'El jardín de las palabras','Un joven de 15 años y una mujer de 27 entablan relación durante un lluvioso día en el Jardín Nacional de Shinjuku Gyoen.',2013,'https://mx.web.img3.acsta.net/c_310_420/pictures/24/02/28/16/45/1753344.jpg','2026-09-24 02:43:39','2026-11-01 05:00:44'),
+(11,'Dorian Gray','Un nuevo joven y bello hereda la fortuna de su abuelo en Londres, con el paso del tiempo y de la influencia de su amigo Henry este se ira corrompiendo.',2009,'https://preview.redd.it/i-watched-dorian-gray-2009-v0-sht0vwy8z0md1.jpeg?width=640&crop=smart&auto=webp&s=3c588482ad6250702950dcaf19c024dc83a48fb9','2026-10-01 04:41:16','2026-11-01 05:01:42'),
+(12,'El cisne negro','Una bailarina comprometida obtiene el papel principal en una producción de el Lago de los Cisnes de Tchaikovsky, lo cual pondrá a prueba su cordura.',2010,'https://www.ecartelera.com/carteles/3500/3552/001_p.jpg','2026-10-01 04:46:06','2026-11-01 05:03:50'),
+(13,'Morte a Venezia','Mientras se recupera en Venecia, el compositor Gustav von Aschenbach se enamora de el adolescente Tadzio.',1971,'2554893.webp','2026-11-01 01:28:14','2026-11-01 05:09:50');
 /*!40000 ALTER TABLE `movies` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -366,4 +365,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-11-01  1:34:25
+-- Dump completed on 2026-11-01  5:22:16
