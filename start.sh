@@ -17,6 +17,9 @@ php artisan migrate --force
 # 2. Symlink de storage (portadas subidas como archivo)
 php artisan storage:link || true
 
+# Asegurar que exista el directorio de vistas compiladas
+mkdir -p storage/framework/views
+
 # 3. Cachés de producción (generadas DESPUÉS de que las variables de Railway existen)
 php artisan optimize:clear
 php artisan config:cache
